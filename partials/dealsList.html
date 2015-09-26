@@ -1,0 +1,9 @@
+<div ng-controller="DealCtrl">
+  <span ng-click="addDeal()">++++++++</span>
+  <h1>Deals <a ui-sref="addDeals">Add Deal<a></h1>
+  <ol>
+    <li ng-repeat="item in deals2">
+      <a href="{{item.deal}}">{{item.createdAt}} </a>
+    </li>
+  </ol>
+</div>

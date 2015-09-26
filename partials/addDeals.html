@@ -1,0 +1,18 @@
+<h1>Add a deal to Share!</h1>
+<div ng-controller="DealCtrl">
+  <form ng-submit="addThenHome()" type="text">
+    <div class="form-group">
+      <input type="text" ng-model="DealFactory.title" placeholder="Title" class="form-control">
+      <input type="text" ng-model="DealFactory.deal" placeholder="Deal" class="form-control">
+      <input type="text" ng-model="DealFactory.numPlates" placeholder="Number of Plates Available" class="form-control">
+      <input type="text" ng-model="DealFactory.percentDiscount" placeholder="Percent Discount" class="form-control">
+      <input type="text" ng-model="DealFactory.timeleft" placeholder="Time left on deal" class="form-control">
+      <input type="text" ng-model="DealFactory.image" placeholder="Url to image" class="form-control">
+
+
+    </div>
+    <button type="submit" class="btn btn-lg btn-success">Submit</button>
+  </form>
+
+  <a ui-sref="dealsList"> Return to List of Deals </a>
+</div>
